@@ -1,0 +1,1389 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* cursor: pointer; */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+.main {
+    width: 100vw;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background-color: white;
+}
+
+.header1,
+.header2 {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 17px;
+}
+
+.search-bar {
+    background-color: #EDEEEE;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    /* cursor: none; */
+}
+
+.search-bar input {
+    width: 250px;
+    background-color: transparent;
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+/* .search-bar button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+} */
+
+/* .search-bar:focus{
+    background-color: white;
+} */
+
+.last-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+ 
+.nav-bar a{
+    position: relative;
+    z-index: 999;
+}
+
+
+.home {
+    /* width: 80px; */
+    height: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden; 
+    padding: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.hover-box {
+    width: 120px;
+    /* height: 10px; */
+    background-color: #F4EDDD;
+    position: absolute;
+    top: -20px;
+    left: -5px;
+    transition: 0.5s;
+}
+
+.about {
+    /* width: 80px; */
+    height: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+
+
+.hover-box{
+    /* width: 120px; */
+    /* height: 10px; */
+    background-color: #F4EDDD;
+    position: absolute;
+    top: -20px;
+    left: -5px;
+    transition: 0.5s;
+}
+
+.home:hover .hover-box {
+    top: -5px;
+    height: 33px;
+}
+
+.about:hover .hover-box {
+    top: -5px;
+    height: 33px;
+    color: #1EA24B;
+}
+.about:hover a {
+    color: #22A44F;
+}
+
+.shop{
+    height: 30px;
+    text-align: center;
+    position: relative;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding: 3px;
+    /* padding-right: 10px; */
+}
+
+
+
+
+.hover1-box {
+    width: 130%;
+    background-color: #F4EDDD;
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.5s;
+    top: -3px;
+    left: -9px;
+
+    height: 33px;
+}
+
+.shop:hover .hover1-box {
+    top: -5px;
+    height: 33px;
+    transform: scaleY(1);
+    /* visibility: visible; */
+}
+
+.shop a{
+    position: relative;
+}
+
+.sub-divi{
+    width: 100%;
+    position: absolute;
+    top:30px;
+    width: 130px;
+    visibility: hidden;
+    text-align: center;
+    background-color: white;
+    border-top: 2px solid #FB752F;
+    padding: 10px;
+}
+.shop:hover .sub-divi{
+    visibility: visible;
+    transition-delay: 0.2s;
+}
+
+
+.home:hover a {
+    color: #22A44F;
+}
+
+.shop:hover a {
+    color: #22A44F;
+}
+
+.sub-divi:hover{
+    background-color: #F4EDDD;
+}
+
+
+
+
+
+.last-bar i:hover{
+    color: #FA752F;
+}
+.search-bar i{
+    font-size: 18px;
+}
+
+
+
+/* pages */
+
+.page{
+    position: relative;
+    /* padding-top: 3px; */
+    
+}
+
+.page:hover a {
+    color: #22A44F;
+}
+
+.hover2-box {
+    width: 150%;
+    background-color: #F4EDDD;
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.5s;
+    top: -5px;
+    left: -9px;
+    height: 33px;
+    
+}
+
+.page:hover .hover2-box {
+    top: -5px;
+    height: 33px;
+    transform: scaleY(1);
+    /* visibility: visible; */
+}
+
+.sub-divi2{
+    /* width: 100%; */
+    position: absolute;
+    top:30px;
+    width: 130px;
+    visibility: hidden;
+    text-align: center;
+    background-color: white;
+    border-top: 2px solid #FB752F;
+    /* padding: 10px; */
+}
+.page:hover .sub-divi2{
+    visibility: visible;
+    transition-delay: 0.2s;
+}
+
+.Single:hover{
+    background-color: #F4EDDD;
+}
+
+.Single{
+    height: 40px;
+    /* line-height: 35px; */
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 15px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;  
+    
+}
+
+
+
+
+/* section 1 start */
+
+
+.section{
+    width: 100%;
+    /* display: flex;
+    justify-content: space-between; */
+    background-image: url(Image/paper-bag-with-vegetables-and-fruits-on-white-background-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+   padding-bottom: 150px;
+}
+
+.section1-right{
+   display: flex; 
+   flex-direction: column;
+   gap: 30px;
+   padding-left: 150px;
+}
+
+.span1{
+    font-size: 13px;
+    color: orangered;
+}
+
+.span2{
+    font-size: 70px;
+}
+.span3{
+    font-weight: lighter;
+}
+
+.shop-buttan{
+    font-size: 20px;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 60px;
+    margin-left: 150px;
+    background-color: #FA752F;
+    color: white;
+    transition: 0.8s;
+}
+
+.shop-buttan:hover{
+    background-color: #B09C8B;
+    color: black;
+}
+
+
+
+
+.section2{
+    width: 100%;
+    background-color: #0B2C35;
+    padding: 60px;
+    position: relative;
+}
+
+.section2 h3{
+    font-size: 50px;
+    color: white;
+}
+
+.section2-img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: white;
+    /* border: 1px dotted blue; */
+    /* padding: 10px; */
+    position: absolute;
+    top: -80px;
+    left: 800px;
+    text-align: center;
+    font-size: 25px;
+    
+}
+
+.doted{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    /* background-color: white; */
+    border: 2px dotted green;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding-top: 40px; 
+    /* animation: round-dot 1s infinite linear; */
+}
+
+.section2-img2{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: white;
+    /* border: 1px dotted blue; */
+    /* padding: 10px; */
+    position: absolute;
+    top: -80px;
+    left: 1000px;
+    text-align: center;
+    font-size: 25px;
+    
+}
+
+.section2-img3{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: white;
+    /* border: 1px dotted blue; */
+    /* padding: 10px; */
+    position: absolute;
+    top: -80px;
+    left: 1200px;
+    text-align: center;
+    font-size: 25px;
+}
+/* .doted span{
+    position: sticky;
+    top: 0px;
+} */
+
+
+/* @keyframes round-dot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} */
+
+
+/* section 3 start */
+
+.section3{
+     width: 100%;
+     display: flex;
+     justify-content: space-around;
+     padding: 20px;
+     margin-top: 150px;
+}
+
+.section3-right{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.line{
+    border: 1px solid #FA752F;
+    width: 200px;
+}
+.section-left{
+   column-count: 2; 
+   font-size: 20px;
+   font-weight: normal;
+   margin-top: 50px;
+}
+
+.section4{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video{
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section5{
+    width: 100%;
+    background-color: #F9F9F9;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.section5-box1{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.line2{
+    border-bottom: 2px solid #FA752F;
+    width: 580px;
+    margin-bottom: 25px; 
+}
+
+
+.section5-box2{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box2-r1{
+    width: 30%;
+    position: relative;
+}
+
+
+.box2-r1 img{
+    position: absolute;
+    transition: 1s;
+}
+
+
+.box2-h4{
+    position: absolute;
+    top: 50px;
+    font-size: 25px;
+    left: 80px; 
+    transition: 1s;
+}
+
+.box2-span{
+    position: absolute;
+    top: 140px;
+    font-size: 20px;
+    left: 80px;
+    transition: 1s;
+}
+
+.buttan-section5{
+    width: 120px;
+    position: absolute;
+    top: 200px;
+    background-color: #FA752F;
+    font-size: 20px;
+    text-align: center;
+    padding:6px;
+    left: 80px;
+    transition: 1s;
+}
+
+.box2-r1 img:hover {
+    transform: scale(1.1);
+}
+
+.box2-r1:hover .box2-h4{
+    transform: scale(1.1);
+}
+
+.box2-r1:hover .box2-span{
+    transform: scale(1.1);
+}
+
+.box2-r1:hover .buttan-section5{
+    transform: scale(1.1);
+}
+
+/* .section5-box2  */
+
+.section6{
+    width: 90%;
+    margin: auto;
+    margin-top: 400px;
+    display: flex;
+    background-color: #F5F0E5;
+    padding: 30px;
+    gap: 50px;
+}
+
+.section6-box1{
+    /* width: 90%;
+    margin: auto; */
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.shop-butn{
+    width: 120px;
+    background-color: #FA752F;
+    font-size: 18px;
+    text-align: center;
+    padding:10px;
+    margin-top: 10px;
+    color: white;
+    line-height: 25px;
+}
+
+
+.line3{
+    border: 2px solid #FA752F;
+    width: 650px;
+    
+}
+
+/* .section6{
+
+} */
+
+.section6-box2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section6-text{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.section6-box2 img{
+     filter: drop-shadow(2px 2px 2px green);
+     transition: 1s;
+     position: relative;
+     top: 0px;
+}
+
+.section6-box2 img:hover {
+    transform: scale(1.1);
+}
+
+.shop-butn{
+    transition: 1s;
+}
+
+.shop-butn:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
+.sale{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 110px;
+    transform: translatey(-20px);
+    background-color: #1EA24B;
+    border-radius: 50%;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 17px;
+    color: white;
+}
+
+
+
+.section7{
+    width: 100%;
+    background-color: #F9F9F9;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+.section7-box1{
+    width: 90%;
+    margin: auto;
+}
+
+
+.line4{
+    border-bottom: 2px solid #FA752F;
+    width: 900px;
+    margin-bottom: 20px;
+}
+
+.section7-box2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.section7-text2{
+   font-size: 40px;
+   font-weight: 600;
+}
+
+
+.section7-r1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.section7-text{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.product15{
+    color: #FA752F;
+}
+
+.section7-r1 img{
+     filter: drop-shadow(2px 2px 2px green);
+     transition: 1s;
+     position: relative;
+     top: 0px;
+}
+
+.section7-r1 img:hover {
+    transform: scale(1.1);
+}
+
+.shop-butn7{
+    width: 120px;
+    background-color: #FA752F;
+    font-size: 18px;
+    text-align: center;
+    padding:10px;
+    margin-top: 10px;
+    color: white;
+    line-height: 25px;
+    transition: 1s;
+}
+
+.shop-butn7:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
+/* .sale7{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 110px;
+    transform: translatey(-20px);
+    background-color: #1EA24B;
+    border-radius: 50%;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 17px;
+    color: white;
+} */
+
+
+
+
+.section8{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+
+.section8 h3{
+    font-size: 50px;
+
+}
+.line8{
+    margin: auto;
+    width: 200px;
+    /* height: 2px; */
+    border: 1px solid #FA752F;
+}
+
+
+.section8-box1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.section8-c1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.section8-c1:hover{
+    transform: scale(1.1);
+}
+
+
+.section9{
+    width: 90%;
+    /* height: 500px; */
+    margin: auto;
+    background-image: url(Image/cotton-bag-with-vegetables-and-fruits-on-green-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    margin-top: 100px
+}
+
+
+
+.shop-butn9{
+    width: 120px;
+    background-color: #FA752F;
+    font-size: 18px;
+    text-align: center;
+    padding:10px;
+    margin-top: 10px;
+    color: white;
+    line-height: 25px;
+    transition: 1s;
+}
+
+.shop-butn9:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
+
+.section10{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 100px;
+    position: relative;
+}
+
+
+.section10-box1{
+    width: 30%;
+    /* height: 200px; */
+    background-image: url(Image/paper-bag-with-vegetables-and-fruits-on-white-background-new.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 10px;
+    /* padding-bottom: 100px; */
+    padding-left: 80px;
+    /* margin-top: 100px */
+    transition: 1s; 
+}
+
+.section10-box1:hover {
+    transform: scale(1.1);
+}
+
+.row1{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 25px;
+    color: black;
+    font-weight: 600;
+    transition: 1s;
+}
+.section10-box1:hover .row1{
+    transform: translatey(35px);
+    
+}
+
+.section10-box1:hover .row2{
+    transform: translatey(40px);  
+    
+}
+
+.section10-box1:hover .shop-butn10{
+    transform: translatey(50px);
+    
+}
+
+
+.section10-box2:hover .row3{
+    transform: translatex(-100px);
+    
+}
+
+.section10-box2:hover .row4{
+    transform: translatex(-100px);  
+}
+
+.section10-box2:hover .shop-butn-section10{
+    transform: translatex(-90px);
+    
+}
+
+
+
+.row2{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    line-height: 30px;
+    margin-top: 10px;
+    font-weight: 600;
+    
+
+}
+
+.shop-butn10{
+    width: 120px;
+    background-color: #FA752F;
+    font-size: 18px;
+    text-align: center;
+    padding:10px;
+    margin-top: 30px;
+    color: white;
+    line-height: 25px;
+    transition: 1s;
+    position: absolute;
+    top: 230px;
+    left: 50px;
+    transition-delay: 1s;
+
+    
+}
+
+.section10-box2{
+    width: 70%;
+    /* height: 200px; */
+    background-image: url(Image/young-cheerful-caucasian-male-courier-holding-grocery-in-box.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 150px;
+    padding-left: 80px;
+
+}
+
+
+
+.row3{
+    /* position: absolute;
+    top: 50px;
+    left: 50px; */
+    font-size: 40px;
+    font-weight: 600;
+    text-align: right;
+    margin-right: 30px;
+    color: white;
+    transition: 1s;
+}
+
+.row4{
+    /* position: absolute;
+    top: 150px;
+    left: 50px; */
+    line-height: 30px;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    /* transition: 0.5s;
+    transition-delay: 10s; */
+
+
+}
+
+
+.shop-butn-section10{
+    width: 200px;
+    background-color: #FA752F;
+    font-size: 18px;
+    text-align: center;
+    padding:10px;
+    margin-top: 30px;
+    color: white;
+    line-height: 25px;
+    transition: 1s;
+    margin-left: 540px;
+    transition-delay: 0.8s;
+
+}
+
+.border-line{
+    width: 90%;
+    margin: auto;
+    height: 2px;
+    background-color: black;
+    margin-top: 30px;  
+}
+
+.sectio11{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.section11 h3{
+    font-size: 70px;
+    text-align: center;
+    /* margin-top: 20px; */
+
+
+}
+.line11{
+    margin: auto;
+    width: 200px;
+    /* height: 2px; */
+    border: 1px solid #FA752F;
+    margin-top: 40px;
+}
+
+.section12{
+    width: 100%;
+    background-image: url(Image/attractive-courier-smiling-at-camera-and-giving-package-with-fresh-vegetables-to-man-at-home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0px 30px 80px;
+    
+    margin-top: 50px;
+
+}
+
+
+.section12-box1{
+    width: 40%;
+    background-color: #EDEEEE;
+    padding: 40px;
+    /* margin-top: 20px; */
+
+}
+
+.section12 h3{
+    font-size: 40px;
+}
+
+.shop-butn12{
+    width: 200px;
+    background-color: #FA752F;
+    font-size: 18px;
+    text-align: center;
+    padding:10px;
+    margin-top: 30px;
+    color: white;
+    line-height: 25px;
+    transition: 1s;
+    /* margin-left: 540px; */
+}
+
+.section13{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* align-items: center; */
+    margin-top: 40px;
+    
+}
+
+.section13-r1{
+    display: flex;
+    gap: 20px;
+}
+
+.section13-box2{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    width: 25%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    
+}
+
+.section13-text{
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-family: sans-serif;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.section13-text:hover{
+    color: #FA752F;
+}
+
+.section13linebox i{
+    font-size: 9px;
+    text-align: center;
+    color: #FA752F;
+   
+}
+
+.section13linebox{
+    width: 100%;
+    border-top: 1px solid black;
+    color: #24A551;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.section13-box1{
+    text-align: center;
+    
+}
+
+
+
+.footer{
+    width: 100%;
+    background-color: #0B2C35;
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+
+}
+.footer-box{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.footer1{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    color: white;
+}
+
+.footer2{
+    padding-top: 10px;
+    cursor: pointer;
+}
+.footer2 ul li{
+    padding-bottom: 20px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.footer2 ul li:hover{
+    color: #1EA24B;
+}
+
+
+.footer4{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+}
+
+
+.footerbutun{
+    width: 100px;
+    background-color: #FA752F;
+    font-size: 18px;
+    text-align: center;
+    padding:8px;
+    /* margin-top: 10px; */
+    color: white;
+    line-height: 25px;
+    transition: 1s;
+    /* margin-left: 540px; */
+}
+
+.footer4{
+    margin-left: 20px;
+
+}
+
+
+.input{
+    display: flex; 
+    gap: 10px;
+}
+
+input{
+    width: 200px;
+    border: none;
+    outline: none;
+    padding-left: 20px;  
+}
+
+.footer4line{
+    height: 2px;
+    width: 400px;
+    background-color: black;
+}
+
+.ooter4-img{
+    display: flex ;
+    gap: 10px;
+}
+
+.footer5line{
+    height: 2px;
+    width: 90%;
+    margin: auto;
+    background-color: black;
+    
+}
+
+.footer6{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+
+
+
+
+/* //about page start  */
+
+.aboutsection1{
+    width: 100%;
+    background-image: url(Image/healthy-vegetables-and-fruits-background-.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:120px;
+}
+
+.aboutsection1 span{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+
+.aboutsection2{
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding-right: 100px;
+}
+
+.aboutsection2-box1{
+    width: 55%;
+    background-image: url(Image/tropical-fruits-in-a-basket-on-wooden-background-top-view-copy-space-tropical-fruits-flat-lay.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding:120px; */
+    padding-top: 450px;
+    /* padding-bottom: 30px; */
+    
+
+}
+
+.about-shop-buttan{
+    font-size: 20px;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 150px;
+    background-color: #ee651b;
+    color: white;
+    transition: 0.8s;
+}
+
+.aboutsection2-box2{
+    width: 100%;
+    background-color: #c8c8c46e;
+    padding-bottom:20px;
+    padding-left: 280px;
+}
+
+.aboutsection2-box3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+
+/* .aboutsection2-box4{
+    display: flex;
+    justify-content: space-between;
+} */
+
+.aboutsection2-box4 i{ 
+    width: 20px;
+    height: 20px;
+    background-color: #1EA24B;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.aboutsection2-box4 span{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.aboutsection3{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.about-right{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.section-left p{
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+
+.about-left span{
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #FA752F;
+    color: white;
+    transition: 0.8s;
+
+}
+
+
+
+.aboutsection4{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+    background-color: white;
+
+    justify-content: space-between;
+
+}
+
+
+.socialiconsabout{
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+    gap: 25px; 
+}
+
+.socialiconsabout i:hover{
+  color: #FA752F;
+}
+
+.socialiconsabout{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+
+  
